@@ -11,3 +11,76 @@ body{
    padding: 0;
    font-family: 'Poppins', sans-serif;
 }
+p{
+   font-size: 16px;
+   color: #6C6C6C;
+}
+.button{
+   background-color: #E02C6D;
+   font-size: 16px;
+   padding: 10px 24px;
+   font-weight: 500;
+   color: #fff;
+   text-decoration: none;
+}
+
+/*-----------------------
+header
+----------------------*/
+header{
+   background-color: #2D25A0;
+}
+.top-menu{
+   width: 82%;
+   margin: 0 auto;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 40px;
+}
+.menu > ul{
+   list-style: none;
+}
+.menu > ul > li{
+   padding-left: 36px;
+   display: inline;
+}
+.menu > ul > li > a{
+   font-size: 16px;
+   color: white;
+   text-decoration: none;
+   font-weight: 500;
+}
+.banner{
+   width: 82%;
+   display: flex;
+   justify-content: space-between;
+   margin: 0 auto;
+   padding: 80px 0px 50px 0px;
+}
+.banner-info{
+   width: 490px;
+   padding-left: 20px;
+}
+.banner-info a i{
+   transition: .5s;
+}
+.banner-info a:hover i{
+   transform: translate(10px,0px);
+   transition: .5s;
+}
+.banner-info h2{
+   max-width: 800px;
+   font-size: 64px;
+   color: white;
+   line-height: 80px;
+   margin-bottom: 25px;
+}
+.banner-img img{
+   width: 550px;
+   height: 440px;
+}
+
+/*------------------------
+ Menu
+-----------------------*/
