@@ -17,12 +17,17 @@ p{
    font-weight: normal;
 }
 .button{
-   background-color: #E02C6D;
+   background: #E02C6D;
    font-size: 16px;
    padding: 10px 24px;
    font-weight: 500;
    color: #fff;
    text-decoration: none;
+   transition: .5s;
+}
+.button:hover{
+   color: #fff;
+   background: black;
 }
 
 /*-----------------------
@@ -137,6 +142,9 @@ header{
 .subscribe-input input{
    padding: 10px 20px;
 }
+.subscribe-input .email{
+   width: 30%;
+}
 .subscribe-input .button{
    border: none;
    margin-left: 5px;
@@ -242,6 +250,10 @@ footer .copyright{
       margin: 0 auto;
    }
 }
+
+/*-------------------------------
+ mobile
+-----------------------------*/
 @media (max-width: 767px) {
    .banner{
       flex-direction: column;
