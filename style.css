@@ -336,7 +336,7 @@ responsive menu-bar
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      padding: 20px 0px;
+      padding: 20px 15px;
    }
    
    .banner-info{
