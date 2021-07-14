@@ -24,6 +24,7 @@ p{
    color: #fff;
    text-decoration: none;
    transition: .5s;
+   margin-left: 5px;
 }
 .button:hover{
    color: #fff;
@@ -339,11 +340,11 @@ responsive menu-bar
    }
    
    .banner-info{
-      text-align: center;
+      text-align: left;
       margin-bottom: 50px;
    }
    .banner-info h2{
-    font-size: 50px;  
+    font-size: 45px;  
    }
    .blogs, .latest-video{
       width: 80%;
