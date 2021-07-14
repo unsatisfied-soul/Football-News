@@ -14,6 +14,7 @@ body{
 p{
    font-size: 16px;
    color: #6C6C6C;
+   font-weight: normal;
 }
 .button{
    background-color: #E02C6D;
@@ -84,3 +85,117 @@ header{
 /*------------------------
  Menu
 -----------------------*/
+
+/*-------------------------
+ Blogs
+-----------------------*/
+.blogs{
+   width: 80%;
+   margin: 0 auto;
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   justify-content: center;
+   grid-gap: 30px;
+   padding: 70px 0px;
+}
+.blog{
+   padding: 15px 15px;
+   box-shadow: 0 0 40px rgba(0, 0, 0, 0.15);
+
+}
+.blog-img .img-blog{
+   width: 300px;
+   height: 256px;
+}
+.blog-post-heading{
+   font-size: 28px;
+   line-height: 10px;
+}
+
+/*--------------------
+ Subscribes
+---------------------*/
+.subscribes{
+   width: 80%;
+   background: black;
+   margin: 0 auto;
+   text-align: center;
+   padding: 40px 40px;
+}
+.subscribe h2{
+   color: white;
+   line-height: 10px;
+}
+.subscribe p{
+   max-width: 600px;
+   margin: 0 auto;
+   color: rgba(245, 245, 245, 0.856);
+   font-weight: normal;
+   margin-bottom: 20px;
+}
+.subscribe-input input{
+   padding: 10px 20px;
+}
+.subscribe-input .button{
+   border: none;
+   margin-left: 5px;
+}
+
+/*------------------------
+ Latest video
+-----------------------*/
+.latest-videos{
+   width: 80%;
+   margin: 0 auto;
+   padding: 70px 0px;
+}
+.latest-video{
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   grid-gap: 30px;justify-content: center;
+}
+.relative-video{
+   box-shadow: 0 0 40px rgba(0, 0, 0, 0.15);
+}
+.relative-video p{
+   padding: 5px 15px 15px 15px;
+}
+
+/*----------------------
+ footer
+--------------------*/
+footer{
+   width: 80%;
+   margin: 0 auto;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   padding-top: 70px;
+   padding-bottom: 10px;
+}
+footer img{
+   width: 400px;
+   margin: 0 auto;
+}
+.footer-icon ul{
+   list-style: none;
+}
+.footer-icon ul li{
+   display: inline-block;
+   margin-left: 14px;
+}
+.footer-icon ul li a{
+   width: 80px;
+   height: 50px;
+   text-decoration: none;
+   background-color: #969BAB;
+   padding: 10px 15px;
+   border-radius: 50%;
+   color: rgba(0, 0, 0, 0.699);
+}
+footer .copyright{
+   font-size: 18px;
+   letter-spacing: 3px;
+   padding-left: 55px;
+}
