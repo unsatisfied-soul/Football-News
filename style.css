@@ -36,14 +36,13 @@ header
 header{
    background-color: #2D25A0;
 }
-.top-menu{
+.menu-bar{
    width: 82%;
    margin: 0 auto;
    display: flex;
    justify-content: space-between;
    align-items: center;
    padding: 40px;
-   display: none;
 }
 .menu > ul{
    list-style: none;
@@ -107,7 +106,13 @@ header{
 .blog{
    padding: 15px 15px;
    box-shadow: 0 0 40px rgba(0, 0, 0, 0.15);
-
+   transform: translateY(0px);
+   transition: transform .5s;
+   margin-bottom: 20px;
+}
+.blog:hover{
+   transform: translateY(-15px);
+   box-shadow: 0 0 40px rgba(0, 0, 0, 0.534);
 }
 .blog-img .img-blog{
    width: 300px;
@@ -138,6 +143,9 @@ header{
    color: rgba(245, 245, 245, 0.856);
    font-weight: normal;
    margin-bottom: 20px;
+}
+.subscribe-input{
+   padding-bottom: 20px;
 }
 .subscribe-input input{
    padding: 10px 20px;
@@ -213,6 +221,29 @@ footer .copyright{
    padding-left: 55px;
 }
 
+/*-------------------------
+responsive menu-bar
+------------------------------ */
+.responsive-menu{
+   display: flex;
+   justify-content: flex-end;
+   background: #2D25A0;
+   padding: 10px 0px;
+   display: none;
+   transition: .5s;
+}
+.responsive-menu i{
+   color: #fff;
+   font-size: 30px;
+   margin-left: 10px;
+   cursor: pointer;
+}
+#click{
+   display: none;
+}
+#click:checked ~ .menu-bar{
+   left: 0%;
+}
 
 /*----------------------------------------
    Media Queres
@@ -222,6 +253,11 @@ footer .copyright{
  laptop
 ---------------------------*/
 @media (max-width: 1050px) {
+   .menu-bar{
+      width: 100%;
+      padding: 40px 0px;
+      justify-content: space-around;
+   }
    .banner{
       width: 100%;
       justify-content: space-evenly;
@@ -250,11 +286,51 @@ footer .copyright{
       margin: 0 auto;
    }
 }
+@media (max-width: 840px) {
+   .menu > ul > li{
+      padding-left: 20px;
+   }
+}
 
 /*-------------------------------
  mobile
 -----------------------------*/
 @media (max-width: 767px) {
+   .responsive-menu{
+      display: block;
+      position: absolute;
+      width: 100%;
+      transition: .6s;
+   }
+   #click:checked ~ .responsive-menu{
+      background-color: black;
+      transition: .5s;
+   }
+   #click:checked ~ .responsive-menu i:before{
+      content: "\f00d";
+      background-color: black;
+   }
+   .menu-bar{
+      display: block;
+      position: absolute;
+      top: 40px;
+      left: -100%;
+      background: #111;
+      height: 100vh;
+      text-align: center;
+      transition: all .5s ease;
+   }
+   .menu > ul{
+      padding-left: 0px;
+   }
+   .menu > ul > li{
+      display: block;
+      padding-left: 0px;
+      margin-bottom: 10px;
+   }
+   .menu > ul > li > a{
+      font-size: 30px;
+   }
    .banner{
       flex-direction: column;
       justify-content: center;
@@ -276,7 +352,7 @@ footer .copyright{
    }
    .blog-img .img-blog{
       width: 100%;
-      height: 500px;
+      height: 450px;
    }
    .blog-post-heading{
       font-size: 28px;
